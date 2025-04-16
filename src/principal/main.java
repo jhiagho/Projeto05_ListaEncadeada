@@ -1,8 +1,10 @@
 package principal;
 
+import ArvoreBinaria.model.Obj;
 import listaEncadeada.lista;
 import listaDuplamenteEncadeada.ListaDupla;
 import listaCircular.ListaCircular;
+import ArvoreBinaria.arvore;
 
 public class main {
 
@@ -67,8 +69,22 @@ public class main {
         minhalista3.remove(2);
         System.out.println(minhalista3.toString());
 
+        System.out.println("\n ------ ARVORE BINÀRIA DE EXEMPLO ------ \n");
+        arvore<Obj> minhaArvore = new arvore<>();
 
+        minhaArvore.inserir(new Obj(13));
+        minhaArvore.inserir(new Obj(10));
+        minhaArvore.inserir(new Obj(25));
+        minhaArvore.inserir(new Obj(2));
+        minhaArvore.inserir(new Obj(12));
+        minhaArvore.inserir(new Obj(20));
+        minhaArvore.inserir(new Obj(31));
+        minhaArvore.inserir(new Obj(29));
+        minhaArvore.inserir(new Obj(32));
 
+        minhaArvore.exibirpreOrdem();
+        minhaArvore.exibirInOrdem();
+        minhaArvore.exibirposOrdem();
     }
 
 
